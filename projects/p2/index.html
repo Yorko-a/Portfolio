@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Customer Experience Survey Form</h1>
+  <p id="description">Please take a few minutes to complete this survey.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <br><br>
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br><br>
+    <label id="number-label" for="number">Service Experience (Rate 1-10)</label>
+    <input type="number" id="number" min="1" max="10" placeholder="Enter a number between 1 and 10">
+    <br><br>
+    <label for="dropdown">Type of service you had</label>
+    <select id="dropdown">
+      <option value="option1">Chat support</option>
+      <option value="option2">Over the phone support</option>
+    </select>
+    <br><br>
+    <label for="radio-group">Would you recommend us to others?</label>
+    <input type="radio" name="radio-group" value="option1"> Yes
+    <input type="radio" name="radio-group" value="option2"> No
+    <br><br>
+    <label for="checkbox-group">Account type (select all that apply)</label>
+    <input type="checkbox" name="checkbox-group" value="option1"> Personal Account
+    <input type="checkbox" name="checkbox-group" value="option2"> Business Account
+    <input type="checkbox" name="checkbox-group" value="option3"> Retail Account
+    <br><br>
+    <label for="textarea">Additional comments:</label>
+    <textarea id="textarea" rows="5" cols="30"></textarea>
+    <br><br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
